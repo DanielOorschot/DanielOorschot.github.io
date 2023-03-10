@@ -1,7 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+
+<head>
+  <style type="text/css">
+    p,
+    li {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    header {
+
+      background: #DD571C;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+
+    .triangle-up {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid black;
+    }
+
+    .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 50px solid black;
+    }
+
+    body {
+      background: #DD571C;
+      margin: 0;
+      font-family: FreeMono, monospace;
+    }
+
+    section {
+      margin-bottom: 30%;
+    }
+
+
+    #navigationBar {
+      background-color: #000000;
+      position: sticky;
+      top: 0;
+    }
+
+    #navigationBar a {
+
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px;
+
+    }
+
+    .linkImage {
+      display: block;
+      padding-left: 5%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      bottom: 0;
+    }
+
+    .pageContent {
+
+      background: #ff8856;
+      padding: 1.5%;
+      display: flex;
+      display: -ms-flexbox;
+
+    }
+
+    .linkContainer {
+      bottom: 10%;
+      position: absolute;
+    }
+
+    .linkContainerRight {
+      bottom: 20%;
+      position: absolute;
+      right: 0%;
+    }
+
+    .sidebarleft {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      flex: 20%;
+    }
+
+    .sidebarright {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      flex: 20%;
+      right: 0;
+
+    }
+
+    .main {
+      margin-left: 20%;
+      flex: 60%;
+      margin-right: 20%;
+
+    }
+
+    .emailLink {
+      transform: rotate(90deg);
+    }
+
+    .navbarRight {
+      float: right;
+    }
+
+    @media screen and (max-width: 700px) {
+
+      #navigationBar {
+        position: relative;
+      }
+
+      .pageContent {
+        flex-direction: column;
+      }
+
+    }
+  </style>
+</head>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>
+      Daniel Oorschot
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="navigationBar">
+      <a href="home">Daniel</a>
+      <div class="navbarRight">
+        <a href="#aboutme">About</a>
+        <a href="#background">Background</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="pageContent">
+
+      <div class="sidebarleft">
+        <div class="linkContainer">
+          <div class="triangle-down"></div>
+          <a href="https://github.com/DanielOorschot"><img src="github-mark.png" alt="githublogo"
+              style="width:50px;height:50px;" class="linkImage"></a>
+          <a href="https://www.linkedin.com/in/daniel-oorschot-894710182/"><img src="LI-In-Bug.png" alt="linkedinlogo"
+              style="width:50px;height:50px;" class="linkImage"></a>
+          <div class="triangle-up"></div>
+        </div>
+      </div>
+
+
+      <div class="main">
+        <section>
+          <div style="display:inline-block; vertical-align:top; max-width: 60%;">
+            <h1 style="text-align: center;">Hi, my name is</h1>
+            <h2 style="text-align: center;">Daniel Oorschot</h2>
+            <div>
+              <p>I am a graduate software developer with a focus on working with web technologies.</p>
+            </div>
+          </div>
+          <div style="display:inline-block;padding-left: 5%;">
+            <img src="Portfolio Photo square.jpg" alt="PortfolioPhoto" style="width:250px;height:250px;">
+          </div>
+        </section>
+
+        <section>
+          <h3 id="aboutme">About me</h3>
+
+          <p>I am a recent University of Auckland graduate. I completed a BSC/BCOM majoring in Computer Science,
+            Business Analytics and Accounting.
+          </p>
+          <ul>
+            <p>
+              My primary programming languages are:
+            </p>
+            <li>
+              Javascript
+            </li>
+            <li>
+              React
+            </li>
+            <li>
+              TypeScript
+            </li>
+            <li>
+              C#
+            </li>
+            <li>
+              Python
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="projects">Projects</h3>
+          <h4>SciPlan</h4>
+          <p>Student project to build a degree planner for the University of Auckland.
+            Won Best Capstone Project Runner Up.
+          </p>
+          <video width="320" height="240" controls>
+            <source src="SciPlanDemo.mp4" type="video/mp4">
+          </video>
+          <img src="CapstoneNight.jpg" alt="CapstoneNight" Display="Inline-Block" height="240" width="auto">
+        </section>
+        <section>
+          <h3 id="#contact">Contact</h3>
+          <p>
+            <a href="mailto: danieloorschot@gmail.com">
+              <p>danieloorschot@gmail.com</p>
+            </a>
+          </p>
+        </section>
+      </div>
+
+      <div class="sidebarright">
+      </div>
+
+    </div>
+  </body>
+
+  </html>
